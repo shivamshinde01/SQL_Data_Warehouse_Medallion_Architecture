@@ -1,5 +1,4 @@
 /*
-===============================================================================
 Quality Checks
 ===============================================================================
 Script Purpose:
@@ -14,14 +13,12 @@ Script Purpose:
 Usage Notes:
     - Run these checks after data loading Silver Layer.
     - Investigate and resolve any discrepancies found during the checks.
-===============================================================================
 */
 
 -- ====================================================================
 -- Checking 'silver.crm_cust_info'
--- ====================================================================
 -- Check for NULLs or Duplicates in Primary Key
--- Expectation: No Results
+
 SELECT 
     cst_id,
     COUNT(*) 
@@ -43,7 +40,6 @@ FROM silver.crm_cust_info;
 
 -- ====================================================================
 -- Checking 'silver.crm_prd_info'
--- ====================================================================
 -- Check for NULLs or Duplicates in Primary Key
 -- Expectation: No Results
 SELECT 
@@ -81,7 +77,6 @@ WHERE prd_end_dt < prd_start_dt;
 
 -- ====================================================================
 -- Checking 'silver.crm_sales_details'
--- ====================================================================
 -- Check for Invalid Dates
 -- Expectation: No Invalid Dates
 SELECT 
@@ -157,3 +152,4 @@ WHERE cat != TRIM(cat)
 SELECT DISTINCT 
     maintenance 
 FROM silver.erp_px_cat_g1v2;
+
