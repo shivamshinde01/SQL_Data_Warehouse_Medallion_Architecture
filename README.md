@@ -1,6 +1,6 @@
-# Data Warehouse and Analytics Project
+# SQL Data Warehouse using Medallion Architecture
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
+Welcome to the **SQL Data Warehouse using Medallion Architecture Project** repository! 🚀  
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights.
 
 ---
@@ -50,3 +50,4 @@ Develop SQL-based analytics to deliver detailed insights into:
 - **Sales Trends**
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+
